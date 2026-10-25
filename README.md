@@ -1,21 +1,13 @@
-```
-                            ██████╗ ██████╗ █████╗
-                           ██╔════╝██╔════╝██╔══██╗
-                           ██║     ██║     ███████║
-                           ██║     ██║     ██╔══██║
-                           ╚██████╗╚██████╗██║  ██║
-                            ╚═════╝ ╚═════╝╚═╝  ╚═╝
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cca-logo-dark.svg">
+    <img alt="CCA" src="docs/assets/cca-logo-light.svg" width="360">
+  </picture>
+</p>
 
- _____ _           ___         _        ___ _    ___     _                _
-|_   _| |_  ___   / __|___  __| |___   / __| |  |_ _|   /_\  __ _ ___ _ _| |_
-  | | | ' \/ -_) | (__/ _ \/ _` / -_) | (__| |__ | |   / _ \/ _` / -_) ' \  _|
-  |_| |_||_\___|  \___\___/\__,_\___|  \___|____|___| /_/ \_\__, \___|_||_\__|
-                                                            |___/
-                     __   __           ___
-                     \ \ / /__ _  _   / _ \__ __ ___ _
-                      \ V / _ \ || | | (_) \ V  V / ' \
-                       |_|\___/\_,_|  \___/ \_/\_/|_||_|
-```
+<h3 align="center">The Code CLI Agent You Own</h3>
+
+<div align="center">
 
 ![Python](https://img.shields.io/badge/python-3.11%2B-blue?logo=python&logoColor=white)
 ![License](https://img.shields.io/badge/license-MIT-green)
@@ -27,6 +19,8 @@
 **Good enough to be your default agent, simple enough to be your research substrate.**
 
 **Python Native / 33 available built-in tools / Every Trace Can Be Your Data**
+
+</div>
 
 ## Installation
 
