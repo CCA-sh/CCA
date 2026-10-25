@@ -1,0 +1,27 @@
+---
+// Clickable stat card that toggles its matching expandable panel on the landing page.
+interface Props {
+	value: string;
+	label: string;
+	detail: string;
+	id: string;
+}
+const { value, label, detail, id } = Astro.props;
+---
+<button
+	type="button"
+	data-card={id}
+	aria-expanded="false"
+	aria-controls={`feature-panel-${id}`}
+	class="group cursor-pointer border border-neutral-800 p-6 text-left transition-colors duration-200 hover:border-neutral-500 hover:bg-neutral-900/60 focus-visible:border-neutral-400 focus-visible:outline-none aria-expanded:border-neutral-400 aria-expanded:bg-neutral-900/60 motion-reduce:transition-none"
+>
+	<span class="flex items-start justify-between">
+		<span class="font-mono text-2xl text-neutral-100">{value}</span>
+		<span
+			aria-hidden="true"
+			class="font-mono text-lg leading-none text-neutral-600 transition-transform duration-200 group-hover:text-neutral-300 group-aria-expanded:rotate-45 group-aria-expanded:text-neutral-300 motion-reduce:transition-none"
+		>+</span>
+	</span>
+	<span class="block font-mono text-sm text-neutral-500">{label}</span>
+	<span class="mt-3 block text-sm leading-relaxed text-neutral-400">{detail}</span>
+</button>

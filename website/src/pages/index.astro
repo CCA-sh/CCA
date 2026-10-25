@@ -1,0 +1,80 @@
+---
+import Hero from '../components/Hero.astro';
+import InstallBlock from '../components/InstallBlock.astro';
+import FeatureCard from '../components/FeatureCard.astro';
+import FeaturePanel from '../components/FeaturePanel.astro';
+import features from '../data/features.json';
+import '../styles/global.css';
+
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>cca — a Python-native coding agent</title>
+		<meta
+			name="description"
+			content="Good enough to be your default agent, simple enough to be your research substrate."
+		/>
+		<link rel="icon" href={`${base}favicon.svg`} />
+	</head>
+	<body class="min-h-screen bg-neutral-950 text-neutral-100 antialiased">
+		<header class="flex items-center justify-between px-6 py-4">
+			<a href={base} class="font-mono text-sm font-semibold">cca</a>
+			<nav class="flex gap-6 font-mono text-sm text-neutral-400">
+				<a href={`${base}docs/configuration/`} class="hover:text-neutral-100">Docs</a>
+				<a href={`${base}blog/`} class="hover:text-neutral-100">Blog</a>
+				<a href={`${base}changelog/`} class="hover:text-neutral-100">Changelog</a>
+				<a href="https://github.com/CCA-sh/CCA" class="hover:text-neutral-100">GitHub</a>
+			</nav>
+		</header>
+		<main>
+			<Hero />
+			<section class="px-6 pb-16">
+				<InstallBlock />
+			</section>
+			<section class="mx-auto max-w-4xl px-6 pb-24">
+				<div class="grid gap-4 sm:grid-cols-3">
+					{features.stats.map((stat, index) => <FeatureCard {...stat} id={String(index)} />)}
+				</div>
+				{features.stats.map((stat, index) => (
+					<FeaturePanel id={String(index)} {...stat.doc} />
+				))}
+			</section>
+		</main>
+		<footer class="border-t border-neutral-900 px-6 py-8 text-center font-mono text-xs text-neutral-600">
+			MIT License · <a href="https://github.com/CCA-sh/CCA" class="hover:text-neutral-300">Source</a>
+		</footer>
+		<script>
+			const cards = document.querySelectorAll<HTMLButtonElement>('[data-card]');
+			const panels = document.querySelectorAll<HTMLElement>('[data-panel]');
+			const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+			const closeAll = () => {
+				cards.forEach((card) => card.setAttribute('aria-expanded', 'false'));
+				panels.forEach((panel) => {
+					panel.dataset.open = 'false';
+					panel.inert = true;
+				});
+			};
+
+			cards.forEach((card) => {
+				card.addEventListener('click', () => {
+					const wasOpen = card.getAttribute('aria-expanded') === 'true';
+					closeAll();
+					if (wasOpen) return;
+					card.setAttribute('aria-expanded', 'true');
+					const panel = document.querySelector<HTMLElement>(`[data-panel="${card.dataset.card}"]`);
+					if (!panel) return;
+					panel.inert = false;
+					panel.dataset.open = 'true';
+					panel.scrollIntoView({
+						behavior: prefersReducedMotion.matches ? 'auto' : 'smooth',
+						block: 'nearest',
+					});
+				});
+			});
+		</script>
+	</body>
+</html>

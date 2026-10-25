@@ -1,0 +1,64 @@
+# Contracts the variant verifier enforces. Variant *discovery* is by glob, so
+# adding a file needs no edit here — only the rules live in this file.
+bank_version: 1
+
+system_prompt:
+  pinned:
+    first: role
+    last: env
+  # Every variant must render text matching each of these regexes. This is what
+  # stops a paraphrase from silently dropping a behavioral directive and thereby
+  # changing the target distribution instead of diversifying its surface.
+  required_directives:
+    system-reminders: "(?i)system-reminder"
+    hooks-guidance: "(?i)hook"
+    slash-commands: "/compact"
+    token-budget: "(?i)token budget"
+    security-authorized: "(?i)(authorized security|CTF)"
+    security-refuse: "(?i)(malware|DoS|supply-chain)"
+    no-credential-exposure: "(?i)(credential|API key)"
+    read-before-edit: "(?i)read .{0,60}before .{0,20}(modif|edit|chang|writ)"
+    prefer-edit-over-write: "(?i)Edit tool"
+    no-unrequested-extras: "(?i)(beyond what was explicitly asked|only what was asked|not asked for)"
+    no-premature-abstraction: "(?i)(premature abstraction|hypothetical future)"
+    verify-changes: "(?i)(re-read|verify your changes|running a test)"
+    boundary-validation: "(?i)(system boundaries|external APIs)"
+    irreversible-actions: "(?i)(irreversible|blast-radius|ask the user first)"
+    no-verify: "--no-verify"
+    no-force-push-main: "(?i)force push"
+    new-commits-not-amend: "(?i)amend"
+    read-not-cat: "(?i)`cat`"
+    grep-glob: "(?i)Glob"
+    bash-last-resort: "(?i)(Bash only for|no dedicated tool|last resort)"
+    parallel-tools: "(?i)parallel"
+    file-line-refs: "file_path:line_number"
+    structural-overview: "(?i)grep -n"
+    disk-spill-recovery: "(?i)persisted"
+    git-no-interactive: "(?i)interactive"
+    no-secrets-commit: "(?i)\\.env"
+    stage-by-name: "(?i)git add -A"
+    heredoc-commit-msg: "(?i)heredoc"
+    no-emoji: "(?i)emoji"
+    short-direct: "(?i)(short and direct|concise|brief)"
+    match-length: "(?i)(match .{0,20}length|one-line answer|proportional)"
+    markdown: "(?i)markdown"
+    narration-preamble: "(?i)(before each tool call|before calling|before you call|announce)"
+    narration-limit: "25 words"
+    final-summary: "(?i)(100 words|brief summary)"
+  # Guards against a variant that quietly dropped half its content, or one that
+  # ballooned into a different prompt entirely.
+  length_ratio: [0.75, 1.4]
+
+tool_descriptions:
+  description_length_ratio: [0.6, 1.6]
+
+compaction_prompt:
+  # No `pinned` block, and by convention a single @body section: the compaction
+  # prompt is an ordered document (Pass 1 before Pass 2, scratchpad before summary,
+  # then the output spec). Nothing in it may be reordered, only reworded.
+  required_directives:
+    structured-sections: "(?i)(section|## )"
+    preserve-user-intent: "(?i)(intent|goal|request)"
+    preserve-file-paths: "(?i)(file|path)"
+    preserve-pending-work: "(?i)(pending|remaining|next step|incomplete)"
+  length_ratio: [0.7, 1.4]

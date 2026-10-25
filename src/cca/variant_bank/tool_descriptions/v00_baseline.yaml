@@ -1,0 +1,8 @@
+id: v00_baseline
+axis: tool_descriptions
+derived_from: null
+summary: No overrides — every tool keeps the description defined by its Tool class.
+
+# Overrides are partial by design: a tool absent from `tools:` keeps its built-in
+# description, so variants do not need rewriting when a new tool is added.
+tools: {}

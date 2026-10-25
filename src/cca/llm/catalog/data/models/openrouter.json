@@ -1,0 +1,6354 @@
+[
+  {
+    "id": "anthropic/claude-3-haiku",
+    "name": "Claude Haiku 3",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.25,
+      "cache_read": 0.03,
+      "cache_write": 0.3
+    },
+    "context_window": 200000,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "anthropic/claude-3.5-haiku",
+    "name": "Claude 3.5 Haiku",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.7999999999999999,
+      "output": 4,
+      "cache_read": 0.08,
+      "cache_write": 1
+    },
+    "context_window": 200000,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "anthropic/claude-3.5-sonnet",
+    "name": "Claude Sonnet 3.5 v2",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 6,
+      "output": 30,
+      "cache_read": 0.6,
+      "cache_write": 7.5
+    },
+    "context_window": 200000,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet",
+    "name": "Claude 3.7 Sonnet",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "context_window": 200000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-3.7-sonnet:thinking",
+    "name": "Claude 3.7 Sonnet (thinking)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "context_window": 200000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-fable-5",
+    "name": "Claude Fable 5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 50,
+      "cache_read": 1,
+      "cache_write": 12.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-fable-5:batch",
+    "name": "Claude Fable 5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-haiku-4.5",
+    "name": "Claude Haiku 4.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 5,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 1.25
+    },
+    "context_window": 200000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-haiku-4.5:batch",
+    "name": "Claude Haiku 4.5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 2.5,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0.625
+    },
+    "context_window": 200000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4",
+    "name": "Claude Opus 4",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "cache_write": 18.75
+    },
+    "context_window": 200000,
+    "max_tokens": 32000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.1",
+    "name": "Claude Opus 4.1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 15,
+      "output": 75,
+      "cache_read": 1.5,
+      "cache_write": 18.75
+    },
+    "context_window": 200000,
+    "max_tokens": 32000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.1:batch",
+    "name": "Claude Opus 4.1 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 7.5,
+      "output": 37.5,
+      "cache_read": 0.75,
+      "cache_write": 9.375
+    },
+    "context_window": 200000,
+    "max_tokens": 32000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.5",
+    "name": "Claude Opus 4.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 200000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.5:batch",
+    "name": "Claude Opus 4.5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 12.5,
+      "cache_read": 0.25,
+      "cache_write": 3.125
+    },
+    "context_window": 200000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.6",
+    "name": "Claude Opus 4.6",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.6-fast",
+    "name": "Claude Opus 4.6 (Fast)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 150,
+      "cache_read": 3,
+      "cache_write": 37.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.6:batch",
+    "name": "Claude Opus 4.6 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 12.5,
+      "cache_read": 0.25,
+      "cache_write": 3.125
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.7",
+    "name": "Claude Opus 4.7",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.7-fast",
+    "name": "Claude Opus 4.7 (Fast)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 150,
+      "cache_read": 3,
+      "cache_write": 37.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.7:batch",
+    "name": "Claude Opus 4.7 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 12.5,
+      "cache_read": 0.25,
+      "cache_write": 3.125
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.8",
+    "name": "Claude Opus 4.8",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.8-fast",
+    "name": "Claude Opus 4.8 (Fast)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 50,
+      "cache_read": 1,
+      "cache_write": 12.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-4.8:batch",
+    "name": "Claude Opus 4.8 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 12.5,
+      "cache_read": 0.25,
+      "cache_write": 3.125
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-5",
+    "name": "Claude Opus 5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 25,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-opus-5-fast",
+    "name": "Claude Opus 5 (Fast)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 50,
+      "cache_read": 1,
+      "cache_write": 12.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-4",
+    "name": "Claude Sonnet 4",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "context_window": 1000000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.5",
+    "name": "Claude Sonnet 4.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "context_window": 1000000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.5:batch",
+    "name": "Claude Sonnet 4.5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 7.5,
+      "cache_read": 0.15,
+      "cache_write": 1.875
+    },
+    "context_window": 1000000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-4.6",
+    "name": "Claude Sonnet 4.6",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 3.75
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-5",
+    "name": "Claude Sonnet 5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 10,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 2.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "anthropic/claude-sonnet-5:batch",
+    "name": "Claude Sonnet 5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 5,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 1.25
+    },
+    "context_window": 1000000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-chat",
+    "name": "DeepSeek V3",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.2574,
+      "output": 1.0287,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 16000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "deepseek/deepseek-chat-v3-0324",
+    "name": "DeepSeek V3 0324",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.27,
+      "output": 1.12,
+      "cache_read": 0.135,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "deepseek/deepseek-chat-v3.1",
+    "name": "DeepSeek V3.1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 0.95,
+      "cache_read": 0.13,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-r1",
+    "name": "R1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.7,
+      "output": 2.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 16000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-r1-0528",
+    "name": "R1 0528",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 2.1500000000000004,
+      "cache_read": 0.35,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v3.1-terminus",
+    "name": "DeepSeek V3.1 Terminus",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.27,
+      "output": 1,
+      "cache_read": 0.135,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v3.1-terminus:exacto",
+    "name": "DeepSeek V3.1 Terminus (exacto)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.21,
+      "output": 0.7899999999999999,
+      "cache_read": 0.16799999999999998,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v3.2",
+    "name": "DeepSeek V3.2",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.26899999999999996,
+      "output": 0.39999999999999997,
+      "cache_read": 0.13449999999999998,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v3.2-exp",
+    "name": "DeepSeek V3.2 Exp",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.27,
+      "output": 0.41,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 163840,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash",
+    "name": "DeepSeek V4 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.14,
+      "output": 0.28,
+      "cache_read": 0.028,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 393216,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash-0731",
+    "name": "DeepSeek V4 Flash 0731",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.09,
+      "output": 0.18,
+      "cache_read": 0.018,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v4-flash:free",
+    "name": "DeepSeek V4 Flash (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 384000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deepseek/deepseek-v4-pro",
+    "name": "DeepSeek V4 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.435,
+      "output": 0.87,
+      "cache_read": 0.003625,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 384000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.0-flash-001",
+    "name": "Gemini 2.0 Flash",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.39999999999999997,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1000000,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemini-2.0-flash-lite-001",
+    "name": "Gemini 2.0 Flash Lite",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.075,
+      "output": 0.3,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.03,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash Lite",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.39999999999999997,
+      "cache_read": 0.01,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash-lite-preview-09-2025",
+    "name": "Gemini 2.5 Flash Lite Preview 09-2025",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.39999999999999997,
+      "cache_read": 0.01,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash-lite:batch",
+    "name": "Gemini 2.5 Flash Lite (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.049999999999999996,
+      "output": 0.19999999999999998,
+      "cache_read": 0.01,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash-preview-09-2025",
+    "name": "Gemini 2.5 Flash Preview 09-2025",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.03,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-flash:batch",
+    "name": "Gemini 2.5 Flash (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 1.25,
+      "cache_read": 0.03,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0.375
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-2.5-pro-preview",
+    "name": "Gemini 2.5 Pro Preview 06-05",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0.375
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-2.5-pro-preview-05-06",
+    "name": "Gemini 2.5 Pro Preview 05-06",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0.375
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-2.5-pro:batch",
+    "name": "Gemini 2.5 Pro (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.625,
+      "output": 5,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3-flash-preview",
+    "name": "Gemini 3 Flash (Preview)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 3,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3-flash-preview:batch",
+    "name": "Gemini 3 Flash Preview (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65535,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3-pro-image",
+    "name": "Nano Banana Pro (Gemini 3 Pro Image)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0.375
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3-pro-preview",
+    "name": "Gemini 3 Pro Preview",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0.375
+    },
+    "context_window": 1048000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.1-flash-lite",
+    "name": "Gemini 3.1 Flash Lite",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.1-flash-lite-preview",
+    "name": "Gemini 3.1 Flash Lite Preview",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemini-3.1-flash-lite:batch",
+    "name": "Gemini 3.1 Flash Lite (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.125,
+      "output": 0.75,
+      "cache_read": 0.012499999999999999,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.1-pro-preview",
+    "name": "Gemini 3.1 Pro (Preview)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0.375
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.1-pro-preview-customtools",
+    "name": "Gemini 3.1 Pro (Preview Custom Tools)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0.375
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.1-pro-preview:batch",
+    "name": "Gemini 3.1 Pro Preview (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 6,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.5-flash",
+    "name": "Gemini 3.5 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 9,
+      "cache_read": 0.15,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.5-flash-lite",
+    "name": "Gemini 3.5 Flash Lite",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.03,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.5-flash-lite:batch",
+    "name": "Gemini 3.5 Flash Lite (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 1.25,
+      "cache_read": 0.015,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.5-flash:batch",
+    "name": "Gemini 3.5 Flash (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.75,
+      "output": 4.5,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 7.5,
+      "cache_read": 0.15,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.6-flash:batch",
+    "name": "Gemini 3.6 Flash (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.75,
+      "output": 3.75,
+      "cache_read": 0.075,
+      "cache_write": 0.08333333333333334
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.7-flash",
+    "name": "Gemini 3.7 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.375,
+      "output": 1.875,
+      "cache_read": 0.0375,
+      "cache_write": 0.0208333333333333
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_tools": true,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_level": "medium",
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemini-3.7-flash:batch",
+    "name": "Gemini 3.7 Flash (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1875,
+      "output": 0.9375,
+      "cache_read": 0.01875,
+      "cache_write": 0.0208333333333333
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_tools": true,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_level": "medium",
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "google/gemma-3-12b-it",
+    "name": "Gemma 3 12B IT",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.049999999999999996,
+      "output": 0.15,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemma-3-27b-it",
+    "name": "Gemma 3 27B",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.08,
+      "output": 0.44999999999999996,
+      "cache_read": 0.04,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 131072,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemma-3-27b-it:free",
+    "name": "Gemma 3 27B (free)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "google/gemma-4-26b-a4b-it",
+    "name": "Gemma 4 26B A4B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.07,
+      "output": 0.33999999999999997,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 16384,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemma-4-26b-a4b-it:free",
+    "name": "Gemma 4 26B A4B (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemma-4-31b-it",
+    "name": "Gemma 4 31B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.33999999999999997,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "google/gemma-4-31b-it:free",
+    "name": "Gemma 4 31B (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2",
+    "name": "Kimi K2 0711",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.5700000000000001,
+      "output": 2.3,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 100352,
+    "supports_computer_use": false
+  },
+  {
+    "id": "moonshotai/kimi-k2-0905",
+    "name": "Kimi K2 0905",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 100352,
+    "supports_computer_use": false
+  },
+  {
+    "id": "moonshotai/kimi-k2-0905:exacto",
+    "name": "Kimi K2 0905 (exacto)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false
+  },
+  {
+    "id": "moonshotai/kimi-k2-thinking",
+    "name": "Kimi K2 Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 100352,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2.5",
+    "name": "Kimi K2.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5700000000000001,
+      "output": 2.8499999999999996,
+      "cache_read": 0.095,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2.6",
+    "name": "Kimi K2.6",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 3.41,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2.6:free",
+    "name": "Kimi K2.6 (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.73,
+      "output": 3.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "moonshotai/kimi-k3",
+    "name": "Kimi K3",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "default_level": "max",
+      "effort_map": {
+        "max": "max"
+      },
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/gpt-3.5-turbo",
+    "name": "GPT-3.5 Turbo",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 1.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 16385,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-3.5-turbo-0613",
+    "name": "GPT-3.5 Turbo (older v0613)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 2,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 4095,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-3.5-turbo-16k",
+    "name": "GPT-3.5 Turbo 16k",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 4,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 16385,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4",
+    "name": "GPT-4",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 60,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 8191,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4-0314",
+    "name": "GPT-4 (older v0314)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 60,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 8191,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4-1106-preview",
+    "name": "GPT-4 Turbo (older v1106)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 30,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4-turbo",
+    "name": "GPT-4 Turbo",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 30,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4-turbo-preview",
+    "name": "GPT-4 Turbo Preview",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 30,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4.1",
+    "name": "GPT-4.1",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.5,
+      "cache_write": 0
+    },
+    "context_window": 1047576,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4.1-mini",
+    "name": "GPT-4.1 Mini",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.39999999999999997,
+      "output": 1.5999999999999999,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 1047576,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4.1-nano",
+    "name": "GPT-4.1 Nano",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.39999999999999997,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 1047576,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o",
+    "name": "GPT-4o",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 1.25,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-2024-05-13",
+    "name": "GPT-4o (2024-05-13)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 15,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 4096,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-2024-08-06",
+    "name": "GPT-4o (2024-08-06)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 1.25,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-2024-11-20",
+    "name": "GPT-4o (2024-11-20)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 1.25,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-audio-preview",
+    "name": "GPT-4o Audio",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-mini",
+    "name": "GPT-4o mini",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.6,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o-mini-2024-07-18",
+    "name": "GPT-4o-mini (2024-07-18)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.6,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-4o:extended",
+    "name": "GPT-4o (extended)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 6,
+      "output": 18,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 64000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-5",
+    "name": "GPT-5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-codex",
+    "name": "GPT-5 Codex",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-image",
+    "name": "GPT-5 Image",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 10,
+      "cache_read": 1.25,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-image-mini",
+    "name": "GPT-5 Image Mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 2,
+      "cache_read": 0.25,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-mini",
+    "name": "GPT-5 Mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 2,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-mini:batch",
+    "name": "GPT-5 Mini (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.125,
+      "output": 1,
+      "cache_read": 0.012499999999999999,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-nano",
+    "name": "GPT-5 Nano",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.049999999999999996,
+      "output": 0.39999999999999997,
+      "cache_read": 0.005,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-nano:batch",
+    "name": "GPT-5 Nano (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.024999999999999998,
+      "output": 0.19999999999999998,
+      "cache_read": 0.0025,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5-pro",
+    "name": "GPT-5 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 15,
+      "output": 120,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.1",
+    "name": "GPT-5.1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-chat",
+    "name": "GPT-5.1 Chat",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.13,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 32000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-5.1-codex",
+    "name": "GPT-5.1 Codex",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.13,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-codex-max",
+    "name": "GPT-5.1-Codex-Max",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.1-codex-mini",
+    "name": "GPT-5.1-Codex-Mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 2,
+      "cache_read": 0.03,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.1:batch",
+    "name": "GPT-5.1 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.625,
+      "output": 5,
+      "cache_read": 0.0625,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.2",
+    "name": "GPT-5.2",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.75,
+      "output": 14,
+      "cache_read": 0.175,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.2-chat",
+    "name": "GPT-5.2 Chat",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.75,
+      "output": 14,
+      "cache_read": 0.175,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-5.2-codex",
+    "name": "GPT-5.2 Codex",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.75,
+      "output": 14,
+      "cache_read": 0.175,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.2-pro",
+    "name": "GPT-5.2 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 21,
+      "output": 168,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.2:batch",
+    "name": "GPT-5.2 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.875,
+      "output": 7,
+      "cache_read": 0.0875,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.3-chat",
+    "name": "GPT-5.3 Chat",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.75,
+      "output": 14,
+      "cache_read": 0.175,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-5.3-codex",
+    "name": "GPT-5.3 Codex",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.75,
+      "output": 14,
+      "cache_read": 0.175,
+      "cache_write": 0
+    },
+    "context_window": 272000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4",
+    "name": "GPT-5.4",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 15,
+      "cache_read": 0.25,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4-mini",
+    "name": "GPT-5.4 Mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.75,
+      "output": 4.5,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4-mini:batch",
+    "name": "GPT-5.4 Mini (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.375,
+      "output": 2.25,
+      "cache_read": 0.0375,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4-nano",
+    "name": "GPT-5.4 Nano",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 1.25,
+      "cache_read": 0.02,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4-nano:batch",
+    "name": "GPT-5.4 Nano (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.625,
+      "cache_read": 0.01,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4-pro",
+    "name": "GPT-5.4 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 180,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.4:batch",
+    "name": "GPT-5.4 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 7.5,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.5",
+    "name": "GPT-5.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 30,
+      "cache_read": 0.5,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.5-pro",
+    "name": "GPT-5.5 Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 30,
+      "output": 180,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.5:batch",
+    "name": "GPT-5.5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 15,
+      "cache_read": 0.25,
+      "cache_write": 0
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-luna",
+    "name": "GPT-5.6 Luna",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.6000000000000001,
+      "cache_read": 0.01,
+      "cache_write": 0.12500000000000003
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-luna-pro",
+    "name": "GPT-5.6 Luna Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.6000000000000001,
+      "cache_read": 0.01,
+      "cache_write": 0.12500000000000003
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-sol",
+    "name": "GPT-5.6 Sol",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 30,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-sol-pro",
+    "name": "GPT-5.6 Sol Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 30,
+      "cache_read": 0.5,
+      "cache_write": 6.25
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-terra",
+    "name": "GPT-5.6 Terra",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.0000000000000002,
+      "output": 6,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 1.25
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5.6-terra-pro",
+    "name": "GPT-5.6 Terra Pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.0000000000000002,
+      "output": 6,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 1.25
+    },
+    "context_window": 1050000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high",
+        "xhigh",
+        "max"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-5:batch",
+    "name": "GPT-5 (batch)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.625,
+      "output": 5,
+      "cache_read": 0.0625,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-audio",
+    "name": "GPT Audio",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 2.5,
+      "output": 10,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-audio-mini",
+    "name": "GPT Audio Mini",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.4,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/gpt-chat-latest",
+    "name": "GPT Chat Latest",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 5,
+      "output": 30,
+      "cache_read": 0.5,
+      "cache_write": 0
+    },
+    "context_window": 400000,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.037,
+      "output": 0.16999999999999998,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-120b:exacto",
+    "name": "gpt-oss-120b (exacto)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.039,
+      "output": 0.19,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 40960,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-120b:free",
+    "name": "gpt-oss-120b (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-20b",
+    "name": "GPT OSS 20B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.03,
+      "output": 0.13,
+      "cache_read": 0.03,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-20b:free",
+    "name": "gpt-oss-20b (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/gpt-oss-safeguard-20b",
+    "name": "Safety GPT OSS 20B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.075,
+      "output": 0.3,
+      "cache_read": 0.0375,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "openai/o1",
+    "name": "o1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 15,
+      "output": 60,
+      "cache_read": 7.5,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o3",
+    "name": "o3",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.5,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o3-deep-research",
+    "name": "o3 Deep Research",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 10,
+      "output": 40,
+      "cache_read": 2.5,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o3-mini",
+    "name": "o3-mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.55,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o3-mini-high",
+    "name": "o3 Mini High",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.55,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "openai/o3-pro",
+    "name": "o3-pro",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 20,
+      "output": 80,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o4-mini",
+    "name": "o4-mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.275,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o4-mini-deep-research",
+    "name": "o4 Mini Deep Research",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 8,
+      "cache_read": 0.5,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "openai/o4-mini-high",
+    "name": "o4 Mini High",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.1,
+      "output": 4.4,
+      "cache_read": 0.275,
+      "cache_write": 0
+    },
+    "context_window": 200000,
+    "max_tokens": 100000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen-2.5-72b-instruct",
+    "name": "Qwen2.5 72B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.36,
+      "output": 0.39999999999999997,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 32768,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-2.5-7b-instruct",
+    "name": "Qwen2.5 7B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.19999999999999998,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 32768,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-max",
+    "name": "Qwen-Max",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.04,
+      "output": 4.16,
+      "cache_read": 0.20800000000000002,
+      "cache_write": 0
+    },
+    "context_window": 32768,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-plus",
+    "name": "Qwen-Plus",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.26,
+      "output": 0.78,
+      "cache_read": 0.052000000000000005,
+      "cache_write": 0.325
+    },
+    "context_window": 1000000,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-plus-2025-07-28",
+    "name": "Qwen Plus 0728",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.26,
+      "output": 0.78,
+      "cache_read": 0,
+      "cache_write": 0.325
+    },
+    "context_window": 1000000,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-plus-2025-07-28:thinking",
+    "name": "Qwen Plus 0728 (thinking)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.39999999999999997,
+      "output": 1.2,
+      "cache_read": 0,
+      "cache_write": 0.5
+    },
+    "context_window": 1000000,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen-turbo",
+    "name": "Qwen-Turbo",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.0325,
+      "output": 0.13,
+      "cache_read": 0.006500000000000001,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen-vl-max",
+    "name": "Qwen VL Max",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.52,
+      "output": 2.08,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-14b",
+    "name": "Qwen3 14B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.22749999999999998,
+      "output": 0.9099999999999999,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-235b-a22b",
+    "name": "Qwen3 235B A22B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.45499999999999996,
+      "output": 1.8199999999999998,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-235b-a22b-2507",
+    "name": "Qwen3 235B A22B Instruct 2507",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.09,
+      "output": 0.55,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-235b-a22b-thinking-2507",
+    "name": "Qwen3 235B A22B Thinking 2507",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.22999999999999998,
+      "output": 2.3,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-30b-a3b",
+    "name": "Qwen3 30B A3B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.12,
+      "output": 0.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 16384,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-30b-a3b-instruct-2507",
+    "name": "Qwen3 30B A3B Instruct 2507",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.04815,
+      "output": 0.19305,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-30b-a3b-thinking-2507",
+    "name": "Qwen3 30B A3B Thinking 2507",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 2.4,
+      "cache_read": 0.08,
+      "cache_write": 0
+    },
+    "context_window": 81920,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-32b",
+    "name": "Qwen3-32B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.08,
+      "output": 0.28,
+      "cache_read": 0.04,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 16384,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-4b",
+    "name": "Qwen3 4B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.0715,
+      "output": 0.273,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-4b:free",
+    "name": "Qwen3 4B (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 40960,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-8b",
+    "name": "Qwen3 8B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.117,
+      "output": 0.45499999999999996,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3-coder",
+    "name": "Qwen3 Coder 480B A35B",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 1,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder-30b-a3b-instruct",
+    "name": "Qwen3 Coder 30B A3B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.07,
+      "output": 0.28,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder-flash",
+    "name": "Qwen3 Coder Flash",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.195,
+      "output": 0.975,
+      "cache_read": 0.039,
+      "cache_write": 0.24375
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder-next",
+    "name": "Qwen3 Coder Next",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.12,
+      "output": 0.7999999999999999,
+      "cache_read": 0.07,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder-plus",
+    "name": "Qwen3 Coder Plus",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.65,
+      "output": 3.25,
+      "cache_read": 0.13,
+      "cache_write": 0.8125
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder:exacto",
+    "name": "Qwen3 Coder 480B A35B (exacto)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.22,
+      "output": 1.7999999999999998,
+      "cache_read": 0.022,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-coder:free",
+    "name": "Qwen3 Coder 480B A35B (free)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 262000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-max",
+    "name": "Qwen3 Max",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.78,
+      "output": 3.9,
+      "cache_read": 0.156,
+      "cache_write": 0.975
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-max-thinking",
+    "name": "Qwen3 Max Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.78,
+      "output": 3.9,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-next-80b-a3b-instruct",
+    "name": "Qwen3-Next-80B-A3B-Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 1.1,
+      "cache_read": 0.07,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-next-80b-a3b-instruct:free",
+    "name": "Qwen3 Next 80B A3B Instruct (free)",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 16384,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-next-80b-a3b-thinking",
+    "name": "Qwen3 Next 80B A3B Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 1.2,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-vl-235b-a22b-instruct",
+    "name": "Qwen3 VL 235B A22B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.21,
+      "output": 1.9,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-vl-235b-a22b-thinking",
+    "name": "Qwen3 VL 235B A22B Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.39999999999999997,
+      "output": 4,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-vl-30b-a3b-instruct",
+    "name": "Qwen3 VL 30B A3B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.13,
+      "output": 0.52,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-vl-30b-a3b-thinking",
+    "name": "Qwen3 VL 30B A3B Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 2.4,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3-vl-32b-instruct",
+    "name": "Qwen3 VL 32B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.10400000000000001,
+      "output": 0.41600000000000004,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-vl-8b-instruct",
+    "name": "Qwen3 VL 8B Instruct",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.117,
+      "output": 0.45499999999999996,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen/qwen3-vl-8b-thinking",
+    "name": "Qwen3 VL 8B Thinking",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.18,
+      "output": 2.0999999999999996,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-122b-a10b",
+    "name": "Qwen3.5 122B-A10B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.26,
+      "output": 2.08,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-27b",
+    "name": "Qwen3.5-27B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.195,
+      "output": 1.56,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-35b-a3b",
+    "name": "Qwen3.5-35B-A3B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.14,
+      "output": 1,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-397b-a17b",
+    "name": "Qwen3.5 397B A17B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.39,
+      "output": 2.34,
+      "cache_read": 0.22499999999999998,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-9b",
+    "name": "Qwen3.5-9B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.15,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-flash-02-23",
+    "name": "Qwen3.5-Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.065,
+      "output": 0.26,
+      "cache_read": 0,
+      "cache_write": 0.08125
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-plus-02-15",
+    "name": "Qwen3.5 Plus 2026-02-15",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.26,
+      "output": 1.56,
+      "cache_read": 0,
+      "cache_write": 0.325
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.5-plus-20260420",
+    "name": "Qwen3.5 Plus 2026-04-20",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 1.7999999999999998,
+      "cache_read": 0,
+      "cache_write": 0.375
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-27b",
+    "name": "Qwen3.6 27B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-35b-a3b",
+    "name": "Qwen3.6 35B A3B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.14,
+      "output": 1,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-flash",
+    "name": "Qwen3.6 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1875,
+      "output": 1.125,
+      "cache_read": 0,
+      "cache_write": 0.234375
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-max-preview",
+    "name": "Qwen3.6 Max Preview",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.0270000000000001,
+      "output": 6.162,
+      "cache_read": 0,
+      "cache_write": 1.28375
+    },
+    "context_window": 262144,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-plus",
+    "name": "Qwen3.6 Plus",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.325,
+      "output": 1.95,
+      "cache_read": 0,
+      "cache_write": 0.40625
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-plus-preview:free",
+    "name": "Qwen3.6 Plus Preview (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 32000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.6-plus:free",
+    "name": "Qwen3.6 Plus (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.7-flash",
+    "name": "Qwen3.7 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.03,
+      "output": 0.13,
+      "cache_read": 0.006,
+      "cache_write": 0.038000000000000006
+    },
+    "context_window": 1000000,
+    "max_tokens": 65536,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.7-max",
+    "name": "Qwen3.7 Max",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.475,
+      "output": 4.425,
+      "cache_read": 0.295,
+      "cache_write": 1.84375
+    },
+    "context_window": 1000000,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwen3.7-plus",
+    "name": "Qwen3.7 Plus",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.32,
+      "output": 1.28,
+      "cache_read": 0.064,
+      "cache_write": 0.39999999999999997
+    },
+    "context_window": 1000000,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "qwen/qwq-32b",
+    "name": "QwQ 32B",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.58,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-3",
+    "name": "Grok 3",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.75,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false
+  },
+  {
+    "id": "x-ai/grok-3-beta",
+    "name": "Grok 3 Beta",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.75,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": null,
+    "supports_computer_use": false
+  },
+  {
+    "id": "x-ai/grok-3-mini",
+    "name": "Grok 3 Mini",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 0.5,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-3-mini-beta",
+    "name": "Grok 3 Mini Beta",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 0.5,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": null,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4",
+    "name": "Grok 4",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.75,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 64000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4-fast",
+    "name": "Grok 4 Fast",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 2000000,
+    "max_tokens": 30000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4.1-fast",
+    "name": "Grok 4.1 Fast",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 0.5,
+      "cache_read": 0.049999999999999996,
+      "cache_write": 0
+    },
+    "context_window": 2000000,
+    "max_tokens": 30000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4.20",
+    "name": "Grok 4.20",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 2.5,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 2000000,
+    "max_tokens": 2000000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4.20-beta",
+    "name": "Grok 4.20 Beta",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 6,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 2000000,
+    "max_tokens": null,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4.3",
+    "name": "Grok 4.3",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 2.5,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 1000000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-4.5",
+    "name": "Grok 4.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 6,
+      "cache_read": 0.3,
+      "cache_write": 0
+    },
+    "context_window": 500000,
+    "max_tokens": 500000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-build-0.1",
+    "name": "Grok Build 0.1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 2,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 256000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "x-ai/grok-code-fast-1",
+    "name": "Grok Code Fast 1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.19999999999999998,
+      "output": 1.5,
+      "cache_read": 0.02,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 10000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4-32b",
+    "name": "GLM 4 32B",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.09999999999999999,
+      "output": 0.09999999999999999,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "z-ai/glm-4.5",
+    "name": "GLM 4.5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.2,
+      "cache_read": 0.11,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 98304,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.5-air",
+    "name": "GLM 4.5 Air",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.13,
+      "output": 0.85,
+      "cache_read": 0.024999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 98304,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.5-air:free",
+    "name": "GLM 4.5 Air (free)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 96000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.5v",
+    "name": "GLM 4.5V",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 1.7999999999999998,
+      "cache_read": 0.11,
+      "cache_write": 0
+    },
+    "context_window": 65536,
+    "max_tokens": 16384,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.6",
+    "name": "GLM 4.6",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 2,
+      "cache_read": 0.09999999999999999,
+      "cache_write": 0
+    },
+    "context_window": 204800,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.6:exacto",
+    "name": "GLM 4.6 (exacto)",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.44,
+      "output": 1.76,
+      "cache_read": 0.11,
+      "cache_write": 0
+    },
+    "context_window": 204800,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.6v",
+    "name": "GLM 4.6V",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 0.8999999999999999,
+      "cache_read": 0.055,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.7",
+    "name": "GLM 4.7",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.39999999999999997,
+      "output": 1.75,
+      "cache_read": 0.08,
+      "cache_write": 0
+    },
+    "context_window": 204800,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-4.7-flash",
+    "name": "GLM 4.7 Flash",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.06,
+      "output": 0.39999999999999997,
+      "cache_read": 0.01,
+      "cache_write": 0
+    },
+    "context_window": 202752,
+    "max_tokens": 16384,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-5",
+    "name": "GLM 5",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.95,
+      "output": 2.5500000000000003,
+      "cache_read": 0.19999999999999998,
+      "cache_write": 0
+    },
+    "context_window": 204800,
+    "max_tokens": 131072,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-5-turbo",
+    "name": "GLM 5 Turbo",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.2,
+      "output": 4,
+      "cache_read": 0.24,
+      "cache_write": 0
+    },
+    "context_window": 202752,
+    "max_tokens": 131072,
+    "supports_computer_use": false
+  },
+  {
+    "id": "z-ai/glm-5.1",
+    "name": "GLM 5.1",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.966,
+      "output": 3.036,
+      "cache_read": 0.1794,
+      "cache_write": 0
+    },
+    "context_window": 204800,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-5.2",
+    "name": "GLM-5.2",
+    "api": "openrouter",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.42,
+      "output": 1.32,
+      "cache_read": 0.078,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 128000,
+    "supports_computer_use": false,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "z-ai/glm-5v-turbo",
+    "name": "GLM 5V Turbo",
+    "api": "openrouter",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.2,
+      "output": 4,
+      "cache_read": 0.24,
+      "cache_write": 0
+    },
+    "context_window": 202752,
+    "max_tokens": 131072,
+    "supports_computer_use": false
+  }
+]

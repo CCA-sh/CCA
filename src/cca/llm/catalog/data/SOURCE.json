@@ -1,0 +1,8 @@
+{
+  "project": "oh-my-pi",
+  "repository": "https://github.com/can1357/oh-my-pi",
+  "commit": "c10ddac26bb0e3d317e64a18156cf19461f6a5ce",
+  "source": "packages/catalog/src/models.json",
+  "license": "MIT",
+  "policy": "Referencing model provider lists"
+}

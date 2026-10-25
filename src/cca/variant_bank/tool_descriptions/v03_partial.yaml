@@ -1,0 +1,54 @@
+id: v03_partial
+axis: tool_descriptions
+derived_from: v00_baseline
+summary: >-
+  Deliberately narrow — rewrites only the four most-called tools and leaves the rest
+  built-in, exercising the partial-override path.
+
+tools:
+  Read:
+    description: >-
+      Pull a file's contents back, numbered the way cat -n numbers them. Works on
+      text, images (described rather than shown), PDFs, and Jupyter notebooks. Walk
+      through big files with offset and limit. Reading the same span twice in one
+      turn buys you nothing unless you are checking an edit you just applied — but
+      re-reading on a later turn is sensible, because Edit, Write, or Bash may have
+      moved things.
+    params:
+      file_path: The file's absolute path.
+      offset: Where to start, counting from zero — 0 is line 1, 49 is line 50. Default 0.
+      limit: Most lines to return.
+
+  Edit:
+    description: >-
+      Replace one precise stretch of text in a file with another. What you pass as
+      old_string must match the file exactly, down to the whitespace. Turn on
+      replace_all to hit every occurrence. Nothing is written if old_string cannot be
+      found or turns up in more than one place.
+    params:
+      file_path: The file's absolute path.
+      old_string: Exactly the text you expect to find.
+      new_string: What replaces it.
+
+  Grep:
+    description: >-
+      Regex search over file contents, built on ripgrep. Pick the result shape with
+      output_mode: 'auto' (default) hands back matching lines while the output stays
+      manageable (≤50 lines, ≤5000 chars) and otherwise falls back to file names;
+      'files_with_matches' returns paths alone; 'content' always returns lines;
+      'count' tallies matches per file. Trim the search with glob for filenames or
+      type for a language such as 'py', 'js', or 'rust'.
+    params:
+      pattern: The regular expression to match.
+      path: Where to search — a file or a directory. Defaults to the working directory.
+      output_mode: Which result shape you want. Default auto.
+
+  Bash:
+    description: >-
+      Runs a shell command and hands back stdout together with stderr. Setting
+      run_in_background=true starts it detached and returns a job_id you can feed to
+      JobOutput. Timeouts start at 120 seconds and top out at 600. Anything that
+      reads, writes, or searches files should go through the purpose-built tools.
+    params:
+      command: The command to run in the shell.
+      run_in_background: Start it detached rather than waiting (default false).

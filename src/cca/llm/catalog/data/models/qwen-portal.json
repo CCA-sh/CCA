@@ -1,0 +1,37 @@
+[
+  {
+    "id": "coder-model",
+    "name": "Qwen Coder",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 8192
+  },
+  {
+    "id": "vision-model",
+    "name": "Qwen Vision",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 8192
+  }
+]

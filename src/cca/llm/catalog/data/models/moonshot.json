@@ -1,0 +1,368 @@
+[
+  {
+    "id": "kimi-k2-0711-preview",
+    "name": "Kimi K2 0711",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 16384
+  },
+  {
+    "id": "kimi-k2-0905-preview",
+    "name": "Kimi K2 0905",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144
+  },
+  {
+    "id": "kimi-k2-thinking",
+    "name": "Kimi K2 Thinking",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 2.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "kimi-k2-thinking-turbo",
+    "name": "Kimi K2 Thinking Turbo",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 1.15,
+      "output": 8,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "kimi-k2-turbo-preview",
+    "name": "Kimi K2 Turbo",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 2.4,
+      "output": 10,
+      "cache_read": 0.6,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144
+  },
+  {
+    "id": "kimi-k2.5",
+    "name": "Kimi K2.5",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 3,
+      "cache_read": 0.1,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "kimi-k2.6",
+    "name": "Kimi K2.6",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.95,
+      "output": 4,
+      "cache_read": 0.16,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "kimi-k2.7-code",
+    "name": "Kimi K2.7 Code",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.95,
+      "output": 4,
+      "cache_read": 0.19,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "kimi-k2.7-code-highspeed",
+    "name": "Kimi K2.7 Code HighSpeed",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.9,
+      "output": 8,
+      "cache_read": 0.38,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 262144,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "kimi-k3",
+    "name": "Kimi K3",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 3,
+      "output": 15,
+      "cache_read": 0.3,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 131072,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "high",
+        "max"
+      ],
+      "default_level": "max",
+      "effort_map": {
+        "max": "max"
+      },
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "moonshot-v1-128k",
+    "name": "moonshot-v1-128k",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-128k-vision-preview",
+    "name": "moonshot-v1-128k-vision-preview",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-32k",
+    "name": "moonshot-v1-32k",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 32768,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-32k-vision-preview",
+    "name": "moonshot-v1-32k-vision-preview",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 32768,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-8k",
+    "name": "moonshot-v1-8k",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 8192,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-8k-vision-preview",
+    "name": "moonshot-v1-8k-vision-preview",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 8192,
+    "max_tokens": null
+  },
+  {
+    "id": "moonshot-v1-auto",
+    "name": "moonshot-v1-auto",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": null
+  }
+]

@@ -1,0 +1,29 @@
+---
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
+---
+<section class="flex flex-col items-center gap-6 px-6 pt-24 pb-12 text-center">
+	<pre class="text-[10px] leading-tight text-neutral-400 sm:text-xs" aria-label="cca">
+ ██████╗ ██████╗ █████╗
+██╔════╝██╔════╝██╔══██╗
+██║     ██║     ███████║
+██║     ██║     ██╔══██║
+╚██████╗╚██████╗██║  ██║
+ ╚═════╝ ╚═════╝╚═╝  ╚═╝</pre>
+	<h1 class="max-w-2xl text-2xl font-medium text-neutral-100 sm:text-3xl">
+		Good enough to be your default agent, simple enough to be your research substrate.
+	</h1>
+	<div class="flex gap-3">
+		<a
+			href={`${base}docs/configuration/`}
+			class="border border-neutral-100 bg-neutral-100 px-5 py-2 font-mono text-sm text-neutral-950 hover:bg-neutral-300"
+		>
+			Get started
+		</a>
+		<a
+			href="https://github.com/CCA-sh/CCA"
+			class="border border-neutral-700 px-5 py-2 font-mono text-sm text-neutral-100 hover:border-neutral-400"
+		>
+			GitHub
+		</a>
+	</div>
+</section>

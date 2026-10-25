@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+/dist/
+/build/
+/.eggs/
+*.whl
+MANIFEST
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# uv / pip
+.python-version
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checkers / linters
+.mypy_cache/
+.ruff_cache/
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# macOS
+.DS_Store
+.AppleDouble
+
+# cca runtime data
+/transcripts/
+/test_results/
+
+# Secrets — never commit API keys
+.env
+.env.*
+!.env.example
+secrets.yaml
+
+# Local scratch data
+/temp/
+
+# Agents artifacts
+/CLAUDE.md
+/AGENTS.md

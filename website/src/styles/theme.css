@@ -1,0 +1,29 @@
+/* Monochrome overrides for Starlight's theme tokens. Grays only. */
+:root {
+	--sl-color-accent-low: #1f1f1f;
+	--sl-color-accent: #a3a3a3;
+	--sl-color-accent-high: #e5e5e5;
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #e5e5e5;
+	--sl-color-gray-2: #c2c2c2;
+	--sl-color-gray-3: #8f8f8f;
+	--sl-color-gray-4: #5c5c5c;
+	--sl-color-gray-5: #2e2e2e;
+	--sl-color-gray-6: #1a1a1a;
+	--sl-color-black: #0a0a0a;
+}
+
+:root[data-theme='light'] {
+	--sl-color-accent-low: #e5e5e5;
+	--sl-color-accent: #5c5c5c;
+	--sl-color-accent-high: #1a1a1a;
+	--sl-color-white: #0a0a0a;
+	--sl-color-gray-1: #1a1a1a;
+	--sl-color-gray-2: #2e2e2e;
+	--sl-color-gray-3: #5c5c5c;
+	--sl-color-gray-4: #8f8f8f;
+	--sl-color-gray-5: #c2c2c2;
+	--sl-color-gray-6: #ebebeb;
+	--sl-color-gray-7: #f5f5f5;
+	--sl-color-black: #ffffff;
+}

@@ -1,0 +1,70 @@
+id: v01_direct
+axis: tool_descriptions
+derived_from: v00_baseline
+summary: Imperative, second-person phrasing for the core file and search tools.
+
+tools:
+  Read:
+    description: >-
+      Read a file off the filesystem. Content comes back numbered, in cat -n style.
+      Handles text, images (you get a description), PDFs, and Jupyter notebooks. For
+      a long file, page through it with offset and limit. Do not re-read the same
+      range twice in one turn unless you are confirming an edit you just made;
+      re-reading in a later turn is fine, since Edit, Write, or Bash may have changed
+      the file underneath you.
+    params:
+      file_path: Absolute path of the file you want to read.
+      offset: Zero-based starting line. offset=0 begins at line 1, offset=49 begins at line 50. Defaults to 0.
+      limit: Cap on how many lines come back.
+      pages: "PDFs only: which pages, e.g. '1-5' or '3'."
+
+  Write:
+    description: >-
+      Write content to a file, creating any parent directories along the way. The
+      whole file is replaced. To change part of a file that already exists, use Edit.
+    params:
+      file_path: Absolute path of the file.
+      content: What to write into it.
+
+  Edit:
+    description: >-
+      Swap one exact string for another inside a file. old_string has to match the
+      file character for character, whitespace included. Pass replace_all=true to
+      change every occurrence. If old_string is missing or matches more than one
+      place, the edit fails rather than guessing.
+    params:
+      file_path: Absolute path of the file.
+      old_string: The exact text to look for.
+      new_string: What to put in its place.
+      replace_all: Change every occurrence instead of one (default false).
+
+  Glob:
+    description: >-
+      Match file paths quickly by pattern. Results come back newest-modified first.
+      Patterns look like '**/*.py', 'src/**/*.ts', or '*.json'.
+    params:
+      pattern: The glob pattern to match paths against.
+      path: Directory to search under. Defaults to the working directory.
+
+  Bash:
+    description: >-
+      Run a shell command and get back stdout and stderr. Pass run_in_background=true
+      to launch without blocking; you get a job_id to hand to JobOutput later.
+      Timeout defaults to 120 seconds and caps at 600. Reach for the dedicated tools
+      instead when you need to read, write, or search files.
+    params:
+      command: The shell command to run.
+      description: One short line on what the command does.
+      timeout: Timeout in milliseconds (default 120000, max 600000).
+      run_in_background: Launch it without waiting for it to finish (default false).
+
+  SearchInFile:
+    description: >-
+      Find a regex inside one specific file and get each hit back with the lines
+      around it. Prefer this over paging through a large file when you are hunting
+      for a particular function, class, or string — it lands you on the spot without
+      pagination.
+    params:
+      file_path: Absolute path of the file.
+      pattern: The regex to search for.
+      context_lines: How many lines to show on each side of a match. Defaults to 10.

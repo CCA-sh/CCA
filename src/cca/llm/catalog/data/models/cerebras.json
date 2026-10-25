@@ -1,0 +1,154 @@
+[
+  {
+    "id": "gemma-4-31b",
+    "name": "Gemma 4 31B IT",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.99,
+      "output": 1.49,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 40960,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  },
+  {
+    "id": "gpt-oss-120b",
+    "name": "GPT OSS 120B",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.35,
+      "output": 0.75,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 40960,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "llama3.1-8b",
+    "name": "Llama 3.1 8B",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.1,
+      "output": 0.1,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 32000,
+    "max_tokens": 8000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen-3-235b-a22b-instruct-2507",
+    "name": "Qwen 3 235B Instruct",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.6,
+      "output": 1.2,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131000,
+    "max_tokens": 32000,
+    "supports_computer_use": false
+  },
+  {
+    "id": "qwen-3-coder-480b",
+    "name": "qwen-3-coder-480b",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "zai-glm-4.6",
+    "name": "zai-glm-4.6",
+    "api": "openai-completions",
+    "reasoning": false,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 32768,
+    "supports_computer_use": false
+  },
+  {
+    "id": "zai-glm-4.7",
+    "name": "Z.AI GLM-4.7",
+    "api": "openai-completions",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 2.25,
+      "output": 2.75,
+      "cache_read": 2.25,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 40960,
+    "thinking": {
+      "mode": "effort",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high",
+        "xhigh"
+      ]
+    }
+  }
+]

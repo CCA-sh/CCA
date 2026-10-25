@@ -1,0 +1,90 @@
+---
+// Collapsible document panel that grows open below the stat cards (grid-rows 0fr -> 1fr).
+interface Props {
+	id: string;
+	title: string;
+	body: string;
+	specimen?: {
+		label: string;
+		lines: string[];
+	};
+	groups?: Array<{
+		title: string;
+		detail: string;
+	}>;
+	path?: string;
+	fields?: string[];
+	proofs?: string[];
+	href?: string;
+	linkLabel?: string;
+}
+const { id, title, body, specimen, groups, path, fields, proofs, href, linkLabel } = Astro.props;
+const base = `${import.meta.env.BASE_URL.replace(/\/$/, '')}/`;
+const fieldValue = (field: string) => {
+	if (field === 'system') return '"..."';
+	if (field === 'features' || field === 'response') return '{ ... }';
+	return '[ ... ]';
+};
+---
+<div
+	id={`feature-panel-${id}`}
+	data-panel={id}
+	data-open="false"
+	inert
+	class="grid grid-rows-[0fr] transition-[grid-template-rows] duration-300 ease-out data-[open=true]:grid-rows-[1fr] motion-reduce:transition-none"
+>
+	<div class="overflow-hidden">
+		<div class="mt-4 border border-neutral-800 p-6 sm:p-8">
+			<div class:list={[(specimen || (path && fields)) ? 'grid gap-8 md:grid-cols-[minmax(0,1fr)_minmax(18rem,0.8fr)] md:items-start' : '']}>
+				<div>
+					<h2 class="font-mono text-lg text-neutral-100">{title}</h2>
+					<p class="mt-4 max-w-2xl text-sm leading-relaxed text-neutral-400">{body}</p>
+				</div>
+
+				{specimen && (
+					<div class="min-w-0 border border-neutral-800 bg-neutral-950 font-mono text-xs">
+						<div class="border-b border-neutral-800 px-4 py-3 text-neutral-500">{specimen.label}</div>
+						<pre class="overflow-x-auto p-4 leading-6 text-neutral-400" aria-label={specimen.label}><code>{specimen.lines.join('\n')}</code></pre>
+					</div>
+				)}
+
+				{path && fields && (
+					<div class="min-w-0 border border-neutral-800 bg-neutral-950 font-mono text-xs">
+						<div class="overflow-x-auto border-b border-neutral-800 px-4 py-3 text-neutral-500">
+							{path}
+						</div>
+						<pre class="overflow-x-auto p-4 leading-6 text-neutral-500" aria-label="Example trace record"><code><span class="text-neutral-300">{'{'}</span>{fields.map((field, index) => (
+<><span class="text-neutral-300">  "{field}"</span>: {fieldValue(field)}{index < fields.length - 1 ? ',' : ''}{'\n'}</>
+))}<span class="text-neutral-300">{'}'}</span></code></pre>
+					</div>
+				)}
+			</div>
+
+			{groups?.length && (
+				<div class:list={['mt-8 grid gap-px border border-neutral-800 bg-neutral-800', groups.length === 3 ? 'sm:grid-cols-3' : 'sm:grid-cols-2 lg:grid-cols-4']}>
+					{groups.map((group) => (
+						<div class="bg-neutral-950 p-4">
+							<h3 class="font-mono text-xs uppercase tracking-wide text-neutral-300">{group.title}</h3>
+							<p class="mt-2 text-xs leading-relaxed text-neutral-500">{group.detail}</p>
+						</div>
+					))}
+				</div>
+			)}
+
+			{(proofs?.length || (href && linkLabel)) && (
+				<div class="mt-8 flex flex-col gap-5 border-t border-neutral-800 pt-5 sm:flex-row sm:items-center sm:justify-between">
+					{proofs?.length && (
+						<ul class="flex flex-wrap gap-x-4 gap-y-2 font-mono text-xs text-neutral-500" aria-label="Feature properties">
+							{proofs.map((proof) => <li>{proof}</li>)}
+						</ul>
+					)}
+					{href && linkLabel && (
+						<a href={`${base}${href}`} class="shrink-0 font-mono text-xs text-neutral-300 hover:text-neutral-100">
+							{linkLabel} <span aria-hidden="true">→</span>
+						</a>
+					)}
+				</div>
+			)}
+		</div>
+	</div>
+</div>

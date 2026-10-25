@@ -1,0 +1,1119 @@
+[
+  {
+    "id": "deep-research-max-preview-04-2026",
+    "name": "Deep Research Max Preview (Apr-21-2026)",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.2,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "deep-research-preview-04-2026",
+    "name": "Deep Research Preview (Apr-21-2026)",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.2,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-1.5-flash",
+    "name": "Gemini 1.5 Flash",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.075,
+      "output": 0.3,
+      "cache_read": 0.01875,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemini-1.5-flash-8b",
+    "name": "Gemini 1.5 Flash-8B",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.0375,
+      "output": 0.15,
+      "cache_read": 0.01,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemini-1.5-pro",
+    "name": "Gemini 1.5 Pro",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 5,
+      "cache_read": 0.3125,
+      "cache_write": 0
+    },
+    "context_window": 1000000,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemini-2.0-flash",
+    "name": "Gemini 2.0 Flash",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemini-2.0-flash-lite",
+    "name": "Gemini 2.0 Flash-Lite",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.075,
+      "output": 0.3,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemini-2.5-computer-use-preview-10-2025",
+    "name": "Gemini 2.5 Computer Use Preview 10-2025",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash",
+    "name": "Gemini 2.5 Flash",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.03,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-lite",
+    "name": "Gemini 2.5 Flash-Lite",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.01,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-06-17",
+    "name": "Gemini 2.5 Flash Lite Preview 06-17",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-lite-preview-09-2025",
+    "name": "Gemini 2.5 Flash Lite Preview (09/2025)",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.1,
+      "output": 0.4,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-preview-04-17",
+    "name": "Gemini 2.5 Flash Preview 04-17",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.6,
+      "cache_read": 0.0375,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-preview-05-20",
+    "name": "Gemini 2.5 Flash Preview 05-20",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.15,
+      "output": 0.6,
+      "cache_read": 0.0375,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-flash-preview-09-2025",
+    "name": "Gemini 2.5 Flash Preview (09/2025)",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-2.5-pro",
+    "name": "Gemini 2.5 Pro",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.125,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-2.5-pro-preview-05-06",
+    "name": "Gemini 2.5 Pro Preview 05-06",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.31,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-2.5-pro-preview-06-05",
+    "name": "Gemini 2.5 Pro Preview 06-05",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.25,
+      "output": 10,
+      "cache_read": 0.31,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3-flash-preview",
+    "name": "Gemini 3 Flash Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 3,
+      "cache_read": 0.05,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3-pro-preview",
+    "name": "Gemini 3 Pro Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.2,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-flash-lite",
+    "name": "Gemini 3.1 Flash Lite",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-flash-lite-image",
+    "name": "Nano Banana 2 Lite",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 30,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 65536,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-flash-lite-preview",
+    "name": "Gemini 3.1 Flash Lite Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-flash-live-preview",
+    "name": "Gemini 3.1 Flash Live Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.75,
+      "output": 4.5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-pro-preview",
+    "name": "Gemini 3.1 Pro Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.2,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.1-pro-preview-customtools",
+    "name": "Gemini 3.1 Pro Preview Custom Tools",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 2,
+      "output": 12,
+      "cache_read": 0.2,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "low",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.5-flash",
+    "name": "Gemini 3.5 Flash",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 9,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.5-flash-lite",
+    "name": "Gemini 3.5 Flash Lite",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.3,
+      "output": 2.5,
+      "cache_read": 0.03,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.6-flash",
+    "name": "Gemini 3.6 Flash",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 7.5,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ],
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-3.7-flash",
+    "name": "Gemini 3.7 Flash",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.75,
+      "output": 3.75,
+      "cache_read": 0.075,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "supports_tools": true,
+    "supports_computer_use": true,
+    "thinking": {
+      "mode": "google-level",
+      "efforts": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "default_level": "medium",
+      "requires_effort": true
+    }
+  },
+  {
+    "id": "gemini-flash-latest",
+    "name": "Gemini Flash Latest",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1.5,
+      "output": 9,
+      "cache_read": 0.15,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-flash-lite-latest",
+    "name": "Gemini Flash-Lite Latest",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.25,
+      "output": 1.5,
+      "cache_read": 0.025,
+      "cache_write": 0
+    },
+    "context_window": 1048576,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-live-2.5-flash",
+    "name": "Gemini Live 2.5 Flash",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 2,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 128000,
+    "max_tokens": 8000,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-live-2.5-flash-preview-native-audio",
+    "name": "Gemini Live 2.5 Flash Preview Native Audio",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text"
+    ],
+    "cost": {
+      "input": 0.5,
+      "output": 2,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemini-robotics-er-1.6-preview",
+    "name": "Gemini Robotics-ER 1.6 Preview",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 1,
+      "output": 5,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 65536,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-3-27b-it",
+    "name": "Gemma 3 27B",
+    "api": "google-generative-ai",
+    "reasoning": false,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192
+  },
+  {
+    "id": "gemma-4-26b",
+    "name": "Gemma 4 26B",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 8192,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-26b-a4b-it",
+    "name": "Gemma 4 26B A4B IT",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-26b-it",
+    "name": "Gemma 4 26B",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 8192,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-31b",
+    "name": "Gemma 4 31B IT",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 256000,
+    "max_tokens": 8192,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-31b-it",
+    "name": "Gemma 4 31B IT",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 262144,
+    "max_tokens": 32768,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-E2B-it",
+    "name": "Gemma 4 E2B IT",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  },
+  {
+    "id": "gemma-4-E4B-it",
+    "name": "Gemma 4 E4B IT",
+    "api": "google-generative-ai",
+    "reasoning": true,
+    "input": [
+      "text",
+      "image"
+    ],
+    "cost": {
+      "input": 0,
+      "output": 0,
+      "cache_read": 0,
+      "cache_write": 0
+    },
+    "context_window": 131072,
+    "max_tokens": 8192,
+    "thinking": {
+      "mode": "budget",
+      "efforts": [
+        "minimal",
+        "low",
+        "medium",
+        "high"
+      ]
+    }
+  }
+]

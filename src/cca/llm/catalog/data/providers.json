@@ -1,0 +1,219 @@
+[
+  {
+    "id": "anthropic",
+    "name": "Anthropic",
+    "backend": "anthropic",
+    "base_url": "https://api.anthropic.com",
+    "env_vars": [
+      "ANTHROPIC_API_KEY"
+    ],
+    "default_model": "claude-opus-4-8",
+    "source_provider": "anthropic",
+    "model_count": 26
+  },
+  {
+    "id": "openai",
+    "name": "OpenAI",
+    "backend": "openai",
+    "base_url": "https://api.openai.com/v1",
+    "env_vars": [
+      "OPENAI_API_KEY"
+    ],
+    "default_model": "gpt-5.5",
+    "source_provider": "openai",
+    "model_count": 51
+  },
+  {
+    "id": "google",
+    "name": "Google Gemini",
+    "backend": "openai",
+    "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+    "env_vars": [
+      "GOOGLE_API_KEY",
+      "GEMINI_API_KEY"
+    ],
+    "default_model": "gemini-3.1-pro-preview",
+    "source_provider": "google",
+    "model_count": 43
+  },
+  {
+    "id": "xai",
+    "name": "xAI",
+    "backend": "openai",
+    "base_url": "https://api.x.ai/v1",
+    "env_vars": [
+      "XAI_API_KEY"
+    ],
+    "default_model": "grok-4-fast-non-reasoning",
+    "source_provider": "xai",
+    "model_count": 30
+  },
+  {
+    "id": "zai",
+    "name": "Z.AI",
+    "backend": "anthropic",
+    "base_url": "https://api.z.ai/api/anthropic",
+    "env_vars": [
+      "ZAI_API_KEY"
+    ],
+    "default_model": "glm-5.2",
+    "source_provider": "zai",
+    "model_count": 14
+  },
+  {
+    "id": "moonshot",
+    "name": "Moonshot AI",
+    "backend": "openai",
+    "base_url": "https://api.moonshot.ai/v1",
+    "env_vars": [
+      "MOONSHOT_API_KEY",
+      "KIMI_API_KEY"
+    ],
+    "default_model": "kimi-k2.7-code",
+    "source_provider": "moonshot",
+    "model_count": 17
+  },
+  {
+    "id": "deepseek",
+    "name": "DeepSeek",
+    "backend": "openai",
+    "base_url": "https://api.deepseek.com",
+    "env_vars": [
+      "DEEPSEEK_API_KEY"
+    ],
+    "default_model": "deepseek-v4-pro",
+    "source_provider": "deepseek",
+    "model_count": 2
+  },
+  {
+    "id": "qwen-portal",
+    "name": "Qwen Portal",
+    "backend": "openai",
+    "base_url": "https://portal.qwen.ai/v1",
+    "env_vars": [
+      "QWEN_PORTAL_API_KEY",
+      "QWEN_OAUTH_TOKEN"
+    ],
+    "default_model": "coder-model",
+    "source_provider": "qwen-portal",
+    "model_count": 2
+  },
+  {
+    "id": "alibaba-coding-plan",
+    "name": "Alibaba Coding Plan",
+    "backend": "openai",
+    "base_url": "https://coding-intl.dashscope.aliyuncs.com/v1",
+    "env_vars": [
+      "ALIBABA_CODING_PLAN_API_KEY"
+    ],
+    "default_model": "qwen3.7-plus",
+    "source_provider": "alibaba-coding-plan",
+    "model_count": 12
+  },
+  {
+    "id": "groq",
+    "name": "Groq",
+    "backend": "openai",
+    "base_url": "https://api.groq.com/openai/v1",
+    "env_vars": [
+      "GROQ_API_KEY"
+    ],
+    "default_model": "openai/gpt-oss-120b",
+    "source_provider": "groq",
+    "model_count": 18
+  },
+  {
+    "id": "mistral",
+    "name": "Mistral AI",
+    "backend": "openai",
+    "base_url": "https://api.mistral.ai/v1",
+    "env_vars": [
+      "MISTRAL_API_KEY"
+    ],
+    "default_model": "devstral-medium-latest",
+    "source_provider": "mistral",
+    "model_count": 29
+  },
+  {
+    "id": "together",
+    "name": "Together AI",
+    "backend": "openai",
+    "base_url": "https://api.together.xyz/v1",
+    "env_vars": [
+      "TOGETHER_API_KEY"
+    ],
+    "default_model": "moonshotai/Kimi-K2.7-Code",
+    "source_provider": "together",
+    "model_count": 34
+  },
+  {
+    "id": "openrouter",
+    "name": "OpenRouter",
+    "backend": "openai",
+    "base_url": "https://openrouter.ai/api/v1",
+    "env_vars": [
+      "OPENROUTER_API_KEY"
+    ],
+    "default_model": "openai/gpt-5.5",
+    "source_provider": "openrouter",
+    "model_count": 251
+  },
+  {
+    "id": "litellm",
+    "name": "LiteLLM Proxy",
+    "backend": "openai",
+    "base_url_env_vars": [
+      "LITE_LLM_URL"
+    ],
+    "env_vars": [
+      "LITE_LLM_KEY"
+    ],
+    "source_provider": "litellm"
+  },
+  {
+    "id": "fireworks",
+    "name": "Fireworks AI",
+    "backend": "openai",
+    "base_url": "https://api.fireworks.ai/inference/v1",
+    "env_vars": [
+      "FIREWORKS_API_KEY"
+    ],
+    "default_model": "kimi-k2.7-code",
+    "source_provider": "fireworks",
+    "model_count": 25
+  },
+  {
+    "id": "cerebras",
+    "name": "Cerebras",
+    "backend": "openai",
+    "base_url": "https://api.cerebras.ai/v1",
+    "env_vars": [
+      "CEREBRAS_API_KEY"
+    ],
+    "default_model": "zai-glm-4.7",
+    "source_provider": "cerebras",
+    "model_count": 7
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "backend": "openai",
+    "base_url": "http://localhost:11434/v1",
+    "env_vars": [],
+    "default_model": null,
+    "keyless": true,
+    "source_provider": null,
+    "model_count": 0
+  },
+  {
+    "id": "lmstudio",
+    "name": "LM Studio",
+    "backend": "openai",
+    "base_url": "http://localhost:1234/v1",
+    "env_vars": [],
+    "default_model": null,
+    "keyless": true,
+    "source_provider": null,
+    "model_count": 0
+  }
+]

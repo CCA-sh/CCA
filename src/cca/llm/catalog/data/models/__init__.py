@@ -1,0 +1,1 @@
+"""Provider-scoped model snapshots."""

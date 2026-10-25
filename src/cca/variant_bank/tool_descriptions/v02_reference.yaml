@@ -1,0 +1,83 @@
+id: v02_reference
+axis: tool_descriptions
+derived_from: v00_baseline
+summary: Clipped reference-manual phrasing; covers the search tools the other variants leave alone.
+
+tools:
+  Read:
+    description: >-
+      Returns the contents of a file, line-numbered in cat -n format. Text, images
+      (as a description), PDFs, and Jupyter notebooks are all supported. Large files
+      can be taken in chunks via offset and limit. Re-reading an identical range
+      within a single turn is wasteful unless verifying a just-applied change;
+      across turns it is worthwhile, since Edit, Write, and Bash may have intervened.
+    params:
+      file_path: Absolute path to the target file.
+      offset: 'Line offset, zero-based: 0 → line 1, 49 → line 50. Default 0.'
+      limit: Upper bound on lines returned.
+      pages: "PDF page range, e.g. '1-5' or '3'."
+
+  Edit:
+    description: >-
+      Exact-match string replacement within a file. The old_string argument must
+      reproduce the file's text precisely, whitespace included. replace_all=true
+      applies the substitution everywhere. A missing or ambiguous old_string aborts
+      the edit.
+    params:
+      file_path: Absolute path to the target file.
+      old_string: Text to locate, matched exactly.
+      new_string: Text substituted in its place.
+      replace_all: Substitute at every occurrence (default false).
+
+  Grep:
+    description: >-
+      Regex search across file contents, backed by ripgrep. output_mode selects the
+      return shape: 'auto' (the default) yields matching lines while the result stays
+      small (≤50 lines and ≤5000 chars) and otherwise degrades to file names;
+      'files_with_matches' yields paths only; 'content' always yields lines; 'count'
+      reports per-file totals. Narrow the sweep with glob for filename patterns or
+      type for a language (for instance 'py', 'js', 'rust').
+    params:
+      pattern: Regular expression to search for.
+      path: File or directory to cover. Defaults to the working directory.
+      glob: "Filename filter, e.g. '*.py'."
+      type: "ripgrep language filter, e.g. 'py', 'js'."
+      output_mode: Shape of the returned result. Default auto.
+      -i: Ignore case.
+      -n: Include line numbers (on by default in content mode).
+      -A: Trailing context lines per match (content mode only).
+      -B: Leading context lines per match (content mode only).
+      -C: Context lines on both sides of a match (content mode).
+      context: Synonym for -C.
+      multiline: Allow matches to span lines.
+      head_limit: Truncate to the first N entries. Default 250.
+      offset: Discard the first N entries. Default 0.
+
+  Glob:
+    description: >-
+      Pattern-matches file paths at speed, ordering results by modification time with
+      the most recent first. Accepts patterns such as '**/*.py', 'src/**/*.ts', '*.json'.
+    params:
+      pattern: Pattern that candidate paths must satisfy.
+      path: Root directory for the search. Defaults to the working directory.
+
+  Write:
+    description: >-
+      Commits content to a file, creating parent directories where they are missing,
+      and replaces the file wholesale. For partial changes to an existing file, Edit
+      is the correct tool.
+    params:
+      file_path: Absolute path to the target file.
+      content: Content to be written.
+
+  Bash:
+    description: >-
+      Executes a shell command, returning both stdout and stderr. With
+      run_in_background=true the process is detached and a job_id is returned for
+      use with JobOutput. The timeout defaults to 120 seconds and is capped at 600.
+      File reads, writes, and searches belong to the dedicated tools, not here.
+    params:
+      command: Shell command to execute.
+      description: Brief statement of the command's purpose.
+      timeout: Timeout in milliseconds (default 120000, max 600000).
+      run_in_background: Detach instead of waiting for completion (default false).

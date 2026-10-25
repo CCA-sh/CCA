@@ -1,0 +1,61 @@
+{
+	"stats": [
+		{
+			"value": "Ready",
+			"label": "for real work",
+			"detail": "Read, edit, run, research, and delegate without assembling another toolchain.",
+			"doc": {
+				"title": "Everything needed for real repository work.",
+				"body": "CCA can inspect a codebase, make targeted changes, run and verify them, search beyond the repository, and coordinate larger tasks.",
+				"specimen": {
+					"label": "terminal",
+					"lines": ["$ cca --cwd ./my-project", "> inspect the failing checks and fix them"]
+				},
+				"groups": [
+					{ "title": "Code", "detail": "read · search · edit · notebooks · LSP" },
+					{ "title": "Run", "detail": "shell · background jobs · monitoring" },
+					{ "title": "Connect", "detail": "web search · MCP · skills" },
+					{ "title": "Orchestrate", "detail": "subagents · tasks · plans · worktrees" }
+				],
+				"proofs": ["permissioned by default", "working-directory sandbox"],
+				"href": "docs/agent-features/permissions-and-tools/",
+				"linkLabel": "Explore tools and permissions"
+			}
+		},
+		{
+			"value": "3",
+			"label": "ways to run",
+			"detail": "Work interactively, automate one task, or drive CCA from another system.",
+			"doc": {
+				"title": "One agent, three interfaces.",
+				"body": "Use CCA directly in your terminal, invoke it from scripts and benchmarks, or integrate the agent loop into your own application.",
+				"specimen": {
+					"label": "three entry points",
+					"lines": ["$ cca", "$ cca --print \"summarize this repo\"", "$ cca --machine"]
+				},
+				"groups": [
+					{ "title": "Interactive", "detail": "Human-in-the-loop repository work." },
+					{ "title": "Print", "detail": "Headless tasks, scripts, CI, and benchmarks." },
+					{ "title": "Machine", "detail": "JSON protocol for orchestrators, applications, and RL loops." }
+				],
+				"proofs": ["human", "scripts", "systems", "traces in every mode"],
+				"href": "docs/agent-features/run-modes/",
+				"linkLabel": "Explore run modes"
+			}
+		},
+		{
+			"value": "Traces",
+			"label": "as data",
+			"detail": "Every model call is captured automatically as self-contained JSONL.",
+			"doc": {
+				"title": "Every call, exactly as it happened.",
+				"body": "CCA records the complete request and response: system prompt, messages, tool schemas, parameters, feature configuration, token usage, thinking, and tool calls.",
+				"path": "~/.cca/llm-calls/session_<id>.jsonl",
+				"fields": ["system", "messages", "tools", "features", "response"],
+				"proofs": ["automatic", "exact I/O", "plain JSONL", "self-describing"],
+				"href": "docs/agent-features/sessions-and-traces/",
+				"linkLabel": "Explore sessions and traces"
+			}
+		}
+	]
+}
