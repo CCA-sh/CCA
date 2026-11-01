@@ -10,11 +10,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.41.11",
+    "@astrojs/starlight": "^0.42.7",
     "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.3.8",
+    "astro": "^7.4.4",
     "sharp": "^0.35.5",
-    "starlight-blog": "^0.27.0",
+    "starlight-blog": "^0.30.2",
     "tailwindcss": "^4.3.3"
   }
 }
