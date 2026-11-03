@@ -158,3 +158,19 @@ See [CHANGELOG.md](CHANGELOG.md).
 ## Acknowledgements
 
 See [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
+
+## Citation
+
+If you use CCA in your research, please cite:
+
+```bibtex
+@misc{cca2026,
+  title         = {},
+  author        = {},
+  year          = {2026},
+  eprint        = {},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://github.com/CCA-sh/CCA}
+}
+```
