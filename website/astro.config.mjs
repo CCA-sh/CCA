@@ -3,6 +3,7 @@ import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 import starlightBlog from 'starlight-blog';
 import tailwindcss from '@tailwindcss/vite';
+import remarkMdLinks from './src/plugins/remark-md-links.mjs';
 
 export default defineConfig({
 	site: 'https://cca-sh.github.io',
@@ -23,6 +24,7 @@ export default defineConfig({
 		'/docs/repl-commands/': '/CCA/docs/agent-features/repl-commands/',
 		'/docs/key-bindings/': '/CCA/docs/agent-features/key-bindings/',
 	},
+	markdown: { remarkPlugins: [[remarkMdLinks, { base: '/CCA' }]] },
 	vite: { plugins: [tailwindcss()] },
 	integrations: [
 		starlight({
