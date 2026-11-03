@@ -1,7 +1,7 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/cca-logo-dark.svg">
-    <img alt="CCA" src="docs/assets/cca-logo-light.svg" width="360">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/CCA-sh/CCA/main/docs/assets/cca-logo-dark.svg">
+    <img alt="CCA" src="https://raw.githubusercontent.com/CCA-sh/CCA/main/docs/assets/cca-logo-light.svg" width="360">
   </picture>
 </p>
 
@@ -47,11 +47,11 @@ cca config set-key anthropic sk-ant-...
 ```
 
 persists to `~/.cca/config.yaml`. Env vars like `ANTHROPIC_API_KEY` work too.
-See [Configuration](docs/public/configuration/index.md) for every configurable option.
+See [Configuration](https://cca-sh.github.io/CCA/docs/configuration/) for every configurable option.
 
 ## Run The Agent
 
-See [Run modes](docs/public/agent-features/run-modes.md) for details on each mode.
+See [Run modes](https://cca-sh.github.io/CCA/docs/agent-features/run-modes/) for details on each mode.
 
 ### (Interactive Mode)
 
@@ -113,37 +113,37 @@ cca sessions list              # list saved sessions (most recent first)
 
 - **Session transcripts:** `~/.cca/sessions/<session_id>.json`
 - **Raw LLM I/O logs:** `~/.cca/llm-calls/session_<id>.jsonl`
-- [Sessions & Traces](docs/public/agent-features/sessions-and-traces.md)
+- [Sessions & Traces](https://cca-sh.github.io/CCA/docs/agent-features/sessions-and-traces/)
 
 ---
 
 ## Detailed Configuration
 
-- [Models](docs/public/configuration/models-and-providers.md) — browse bundled metadata or bring your own API/local model
-- [Thinking level](docs/public/configuration/thinking-mode.md) — adjust thinking level if supported
-- [Configuration](docs/public/configuration/index.md) — configure everything to make your scaffold deterministic at runtime
-- [Feature toggles & presets](docs/public/configuration/feature-toggles.md) — turn off features you don't need; `--preset deterministic` for reproducible traces
-- [Randomization](docs/public/configuration/randomization.md) — `--randomize` varies the prompt, tool descriptions, and tool order per run so collected traces don't overfit to one scaffold
+- [Models](https://cca-sh.github.io/CCA/docs/configuration/models-and-providers/) — browse bundled metadata or bring your own API/local model
+- [Thinking level](https://cca-sh.github.io/CCA/docs/configuration/thinking-mode/) — adjust thinking level if supported
+- [Configuration](https://cca-sh.github.io/CCA/docs/configuration/) — configure everything to make your scaffold deterministic at runtime
+- [Feature toggles & presets](https://cca-sh.github.io/CCA/docs/configuration/feature-toggles/) — turn off features you don't need; `--preset deterministic` for reproducible traces
+- [Randomization](https://cca-sh.github.io/CCA/docs/configuration/randomization/) — `--randomize` varies the prompt, tool descriptions, and tool order per run so collected traces don't overfit to one scaffold
 
 ## Agent Features
 
-- [Subagents](docs/public/agent-features/subagents.md) — native global/project profiles, depth-one delegation, and separated training traces
-- [Run modes](docs/public/agent-features/run-modes.md) — interactive REPL, headless print mode, and the machine-mode JSON protocol
-- [MCP servers](docs/public/agent-features/mcp.md) — connect external tools and resources via the Model Context Protocol
-- [REPL commands](docs/public/agent-features/repl-commands.md) — all supported slash commands
-- [Key bindings](docs/public/agent-features/key-bindings.md) — key bindings supported in interactive mode
-- [Permissions & tools](docs/public/agent-features/permissions-and-tools.md) — permission controls and the built-in toolset
-- [Hooks](docs/public/agent-features/hooks.md) — lifecycle hooks, exit codes, JSON control
-- [Compaction](docs/public/agent-features/compaction.md) — automatic context compaction, `/compact`
-- [Memory](docs/public/agent-features/memory.md) — the agent remembers preferences and project context across sessions
-- [Skills](docs/public/agent-features/skills.md) — install reusable prompt packages from GitHub with `cca skills add owner/repo@name`
-- [Web search](docs/public/agent-features/web-search.md) — DuckDuckGo, Brave, and Serper backends
-- [Sessions & Traces](docs/public/agent-features/sessions-and-traces.md) — every session and LLM call saved as plain JSON, ready to export
-- [Observability](docs/public/agent-features/observability.md) — optional live lifecycle traces to W&B Weave or any OTLP backend
+- [Subagents](https://cca-sh.github.io/CCA/docs/agent-features/subagents/) — native global/project profiles, depth-one delegation, and separated training traces
+- [Run modes](https://cca-sh.github.io/CCA/docs/agent-features/run-modes/) — interactive REPL, headless print mode, and the machine-mode JSON protocol
+- [MCP servers](https://cca-sh.github.io/CCA/docs/agent-features/mcp/) — connect external tools and resources via the Model Context Protocol
+- [REPL commands](https://cca-sh.github.io/CCA/docs/agent-features/repl-commands/) — all supported slash commands
+- [Key bindings](https://cca-sh.github.io/CCA/docs/agent-features/key-bindings/) — key bindings supported in interactive mode
+- [Permissions & tools](https://cca-sh.github.io/CCA/docs/agent-features/permissions-and-tools/) — permission controls and the built-in toolset
+- [Hooks](https://cca-sh.github.io/CCA/docs/agent-features/hooks/) — lifecycle hooks, exit codes, JSON control
+- [Compaction](https://cca-sh.github.io/CCA/docs/agent-features/compaction/) — automatic context compaction, `/compact`
+- [Memory](https://cca-sh.github.io/CCA/docs/agent-features/memory/) — the agent remembers preferences and project context across sessions
+- [Skills](https://cca-sh.github.io/CCA/docs/agent-features/skills/) — install reusable prompt packages from GitHub with `cca skills add owner/repo@name`
+- [Web search](https://cca-sh.github.io/CCA/docs/agent-features/web-search/) — DuckDuckGo, Brave, and Serper backends
+- [Sessions & Traces](https://cca-sh.github.io/CCA/docs/agent-features/sessions-and-traces/) — every session and LLM call saved as plain JSON, ready to export
+- [Observability](https://cca-sh.github.io/CCA/docs/agent-features/observability/) — optional live lifecycle traces to W&B Weave or any OTLP backend
 
 ## Tutorials
 
-- [Run your first task](docs/public/tutorials/first-run.md) — install CCA and choose between interactive, print, and machine modes
+- [Run your first task](https://cca-sh.github.io/CCA/docs/tutorials/first-run/) — install CCA and choose between interactive, print, and machine modes
 
 ## Requirements
 
@@ -156,11 +156,11 @@ CCA is an independent open-source project. It is not affiliated with, endorsed b
 
 ## Changelog
 
-See [CHANGELOG.md](CHANGELOG.md).
+See [CHANGELOG.md](https://cca-sh.github.io/CCA/changelog/).
 
 ## Acknowledgements
 
-See [ACKNOWLEDGEMENTS.md](ACKNOWLEDGEMENTS.md).
+See [ACKNOWLEDGEMENTS.md](https://github.com/CCA-sh/CCA/blob/main/ACKNOWLEDGEMENTS.md).
 
 ## Citation
 
