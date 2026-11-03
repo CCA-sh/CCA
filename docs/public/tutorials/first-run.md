@@ -1,7 +1,7 @@
 ---
-## title: Run your first task  
-title: Install CCA, configure a model, and choose the right run mode for your first task.  
-sidebar:  
+title: Run your first task
+description: Install CCA, configure a model, and choose the right run mode for your first task.
+sidebar:
   order: 1
 ---
 ## Install and configure
