@@ -20,6 +20,9 @@
 
 **Python Native / 33 available built-in tools / Every Trace Can Be Your Data**
 
+[**Website**](https://cca-sh.github.io/CCA/) &nbsp;·&nbsp;
+[**Docs**](https://cca-sh.github.io/CCA/docs/configuration/)
+
 </div>
 
 ## Installation
